@@ -1,0 +1,236 @@
+@font-face {
+    font-family: Poppins;
+    src: url(font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(font/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Koulen;
+    src: url(font/Koulen-Regular.ttf);
+}
+@font-face {
+    font-family: Staat;
+    src: url(font/Staatliches-Regular.ttf);
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.178);
+    
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    align-items: center;
+    font-family: Poppins;
+    padding: 12px;
+    margin: 0;
+}
+ul > p{
+    font-size: 18px
+}
+ul > #home{
+    font-size: 22px;
+}
+section{
+    background-image: url(img/persona-template.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    margin-top: 40px;
+    width: 100%;
+    
+}
+section h1{
+    font-family: Staat;
+    font-size: 38px;
+    color: rgb(69, 82, 136);
+    text-align: center;
+    text-shadow: 2px 2px white;
+    padding-top: 80px;
+    letter-spacing: 6px;
+    min-width: 430px;
+    max-width: 750px;
+    margin: auto;
+}
+.art1{
+    padding: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.art1 > #title-text{
+    width: 400px;
+    text-align: center;
+    font-family: Poppins
+}
+#title-text p{
+    margin-bottom: 50px;
+}
+#linha1, #linha2, #linha3{
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: #99acc5;
+    margin: 14px;
+}
+#linha2{
+    width: 300px;
+}
+#linha3{
+    width: 200px;
+}
+.linha-conjunto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.art2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+#caixa-1, #caixa-2{
+    box-shadow: 0px 10px 15px 0px #c9cdf7b9;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease-in;
+}
+#caixa-1, #caixa-2 p{
+    text-align: center;
+    width: 600px;
+    flex-wrap: wrap;
+    font-family: Poppins;
+}
+#caixa-1:hover{
+    transform: scale(1.04);
+}
+#caixa-2:hover{
+    transform: scale(1.04);
+}
+#sec2{
+    margin-top: 100px;
+    transition: all 0.4s ease-in;
+    background-image: url(img/cardpersona.png);
+    opacity: 0.5;
+}
+
+#sec3{
+    background-image: url(img/persona2.png);
+    transition: all 0.4s ease-in;
+    opacity: 0.5;
+}
+#sec2:hover{
+    opacity: 1;
+}
+#sec3:hover{
+    opacity: 1;
+}
+#sec2, #sec3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: Staat;
+    letter-spacing: 2px;
+    min-width: 300px;
+}
+#sec2 h2{
+    color: white;
+    font-family: Staat;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px #f6a3b4;
+    font-size: 34px;
+}
+#sec3 h2{
+    color: white;
+    font-family: Staat;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px #f6a3b4;
+    font-size: 34px;
+}
+#buy{
+    background-color: #fb8ba3;
+    margin-top: 30px;
+}
+button{
+    width: 200px;
+    margin: auto;
+    margin-top: 0px;
+    padding: 12px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-family: Poppins;
+    font-size: 18px;
+    text-shadow: 2px 2px #f6a3b4;
+    transition: all 0.2s ease-in;
+}
+button:hover{
+    background-color: #fb8ba3;
+    box-shadow: 2px 2px #7493b6,
+                4px 4px #335777;
+    border: 1px solid #1b1b2c;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Poppins;
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+    margin-top: 120px;
+    padding: 20px;
+    background-image: url(img/persona-template2.png);
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    box-shadow: 0px 10px 20px 0px #d18796;
+}
+footer > ul{
+    display: flex;
+    gap: 60px;
+    
+    
+}
+footer p{
+    font-size: 24px;
+}
+@media screen  and (max-width: 500px){
+    section h1{
+        font-size: 24px;
+    }
+    #sec2, #sec3{
+        opacity: 1;
+    }
+    #caixa-2 p{
+        font-size: 14px;
+        width: 320px;
+    }
+    #caixa-1 p{
+        font-size: 14px;
+    }
+    footer p{
+        font-size: 14px
+    }
+    button{
+        background-color: #fb8ba3;
+        box-shadow: 2px 2px #7493b6,
+                    4px 4px #335777;
+        border: 1px solid #1b1b2c;
+    }
+}
